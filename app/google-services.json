@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "818413083082",
+    "firebase_url": "https://auth-b253c.firebaseio.com",
+    "project_id": "auth-b253c",
+    "storage_bucket": "auth-b253c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818413083082:android:fd4569f3538adb78865733",
+        "android_client_info": {
+          "package_name": "com.sctce.authapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818413083082-sslnt0ea0ng4pullbf7c0fr05escko9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALTztck_OWBhxY54wqLcCZT2mFcdpsGMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818413083082-sslnt0ea0ng4pullbf7c0fr05escko9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
