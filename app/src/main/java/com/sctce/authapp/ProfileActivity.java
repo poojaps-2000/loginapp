@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -39,11 +40,27 @@ public class ProfileActivity extends AppCompatActivity {
         );
 
           user = FirebaseAuth.getInstance().getCurrentUser();
+          reference = FirebaseDatabase.getInstance().getReference("Users");
+            userID = user.getUid();
 
+            final TextView fullNameTextView = (TextView) findViewById(R.id.fullName);
 
+        reference.child(userID).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                User userProfile = snapshot.getValue(User.class);
+                if (userProfile != null) {
+                    String fullName = userProfile.fullName;
+                    fullNameTextView.setText(fullName);
+                }
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                    Toast.makeText(ProfileActivity.this,"something wrong happened!",Toast.LENGTH_LONG).show();
+            }
+        });
 
 
     }
 }
-

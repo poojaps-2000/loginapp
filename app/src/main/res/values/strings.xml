@@ -10,4 +10,6 @@
     <string name="register_user">REGISTER USER</string>
     <string name="my_first_login_app">MY FIRST LOGIN APP</string>
     <string name="checking_phase">checking phase</string>
+    <string name="SIGN_OUT">SIGN OUT</string>
+    <string name="WELCOME">WELCOME</string>
 </resources>
